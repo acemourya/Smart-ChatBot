@@ -28,7 +28,7 @@ def wishMe():
     else:
         speak("Good Evening, My loard")
 
-    speak("I am Yashika and I am Baandri. Please tell me how may I help you")
+    speak("I am XYZ. Please tell me how may I help you")
 
 def takeCommand():
     #It takes microphone input from the user and returns string output
@@ -55,8 +55,8 @@ def sendEmail(to,content):
     server = smtplib.SMTP("smtplib.gmail.com", 587)
     server.ehlo()
     server.starttls()
-    server.login("acemourya1@gamil.com", " password ")
-    server.sendmail("acemourya1@gmail.com", to, content)
+    server.login("sender_gamil_ID@gamil.com", " password ")
+    server.sendmail("sender_gamil_ID@gmail.com", to, content)
     server.close()
 
 if __name__== "__main__":
@@ -101,7 +101,7 @@ if __name__== "__main__":
             try:
                 speak("What should I send? ")
                 content = takeCommand()
-                to = "yashikasharma789@gmail.com"
+                to = "Receiver_gmail_ID@gmail.com"
                 sendEmail(to,content)
                 speak('Email has been sent!')
 
